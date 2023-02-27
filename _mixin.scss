@@ -1,0 +1,11 @@
+@mixin span_tag {
+    border-left: 1px solid black;
+    color: #1c1c1c;
+    margin: 0 2rem;
+}
+
+@mixin center_a_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
