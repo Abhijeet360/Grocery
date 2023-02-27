@@ -1,0 +1,162 @@
+@mixin header_content{
+    .top-main-container {
+        background-color: $bgc;
+        // display: none;
+
+        .top-nav {
+            width: 85%;
+            margin: auto;
+            height: 4.5rem;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // border: 2px solid black;
+
+            .container-1 {
+
+
+                ul {
+                    display: flex;
+
+                    span {
+                        @include span_tag();
+                    }
+
+                    li {
+
+
+                        a {
+                            font-size: 1.4rem;
+                            color: $a_tag_color;
+
+                            i {
+                                padding-right: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .container-2 {
+            display: flex;
+            align-items: flex-end;
+            font-size: 1.4rem;
+            color: $a_tag_color;
+
+            ul {
+                display: flex;
+
+                span {
+                    @include span_tag();
+                }
+
+                li {
+                    margin: 0 1rem;
+                    font-size: 1.4rem;
+
+                    a {
+                        color: $a_tag_color;
+                    }
+                }
+            }
+
+            .flag-div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 1.4rem;
+
+                span {
+                    @include span_tag();
+                }
+
+                img {
+                    width: 2.4rem;
+                }
+
+                a {
+                    margin-left: 1rem;
+                    color: $a_tag_color;
+                }
+            }
+        }
+
+    }
+
+    .bottom-nav {
+        width: 85%;
+        margin: auto;
+        padding: 1.5rem 0;
+
+        .items {
+            height: 5.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // border: 2px solid black;
+
+            .logo {
+                font-size: 1.8rem;
+            }
+
+            nav {
+                width: 50%;
+                // border: 2px solid black;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    li {
+
+                        a {
+                            font-weight: 700;
+                            font-size: 1.4rem;
+                            text-transform: uppercase;
+                            color: $a_tag_color;
+
+                            &:hover {
+                                color: $theme-color;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .icons {
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+
+                ul {
+                    display: flex;
+
+                    li {
+                        a {
+                            font-size: 2rem;
+                            color: $a_tag_color;
+                            margin: 0 1rem;
+
+                            span {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+
+                .humberger {
+                    display: none;
+
+                    i {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

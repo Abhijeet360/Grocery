@@ -1,0 +1,32 @@
+@import 'mixin';
+@import 'var';
+@import 'header';
+@import 'main';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: $my_font;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    @include header_content();
+}
+
+main {
+    @include main_content();
+}
