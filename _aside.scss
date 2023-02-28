@@ -1,0 +1,32 @@
+    aside {
+        width: 35%;
+        // height: auto;
+        border: 2px solid $bgc;
+
+        .iner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $btn-color;
+            background-color: $theme-color;
+            font-size: 1.1rem;
+            padding: .5rem 3rem;
+        }
+
+        ul {
+
+            li {
+                padding: .5rem 3rem;
+
+
+                a {
+                    font-size: 1.4rem;
+                    font-family: $my_font;
+                    color: $a_tag_color;
+                    font-weight: bold;
+
+                }
+            }
+        }
+
+    }

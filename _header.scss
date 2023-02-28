@@ -1,7 +1,11 @@
-@mixin header_content{
+header {
     .top-main-container {
         background-color: $bgc;
         // display: none;
+
+        @media (max-width: 998px) {
+            display: none;
+        }
 
         .top-nav {
             width: 85%;
@@ -24,7 +28,6 @@
                     }
 
                     li {
-
 
                         a {
                             font-size: 1.4rem;
@@ -102,6 +105,10 @@
             }
 
             nav {
+                @media (max-width: 998px) {
+                    display: none;
+                }
+
                 width: 50%;
                 // border: 2px solid black;
 
@@ -128,9 +135,13 @@
             }
 
             .icons {
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width: 998px) {
+                    display: none;
+                }
 
                 ul {
                     display: flex;
@@ -148,12 +159,19 @@
                     }
                 }
 
-                .humberger {
-                    display: none;
+            }
 
-                    i {
-                        font-size: 2rem;
-                    }
+            .humberger {
+                display: none;
+                border: 2px solid $a_tag_color;
+                padding: 0.5rem;
+
+                @media (max-width: 998px) {
+                    display: block;
+                }
+
+                i {
+                    font-size: 2rem;
                 }
             }
         }

@@ -1,41 +1,7 @@
-@mixin main_content {
+main {
     width: 85%;
     margin: auto;
-    height: 84vh;
     display: flex;
-
-    aside {
-        width: 35%;
-        border: 2px solid $bgc;
-
-        .iner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            color: $btn-color;
-            background-color: $theme-color;
-            font-size: 1.1rem;
-            padding: .5rem 3rem;
-
-        }
-
-        ul {
-            li {
-                padding: 1rem 3rem;
-
-                a {
-                    font-size: 1.4rem;
-                    font-family: $my_font;
-                    color: $a_tag_color;
-                    font-weight: bold;
-                }
-            }
-        }
-
-
-    }
-
-
 
     .hero-section {
         padding: 0 0 0 3rem;
@@ -52,6 +18,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @media (max-width: 998px) {
+                    display: none;
+                }
 
                 form {
                     width: 100%;
@@ -97,7 +67,6 @@
                 display: flex;
                 align-items: center;
 
-
                 .phone_icon {
                     width: 5rem;
                     height: 5rem;
@@ -122,25 +91,48 @@
 
         .hero {
             width: auto;
-            margin-top: 3rem;
-            // height: 100%;
+            margin-top: 2rem;
+            padding: 4rem 0rem;
             display: flex;
             align-items: center;
             justify-content: space-around;
             background-color: #f5f5f5;
-            border: 2px solid black;
 
             .desceiption {
                 width: 50%;
+                padding: 4rem 5rem;
 
                 h2 {
                     font-size: 1.4rem;
+                    color: $theme-color;
+                    text-transform: uppercase;
+                    letter-spacing: 0.4rem;
                     // font-family: $my_font;
                 }
 
                 h3 {
                     font-size: 4.6rem;
-                    // line-height: 1rem;
+                    line-height: 6rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    color: $a_tag_color;
+                    // text-transform: uppercase;
+                    // letter-spacing: 0.4rem;
+                }
+
+                button {
+                    background-color: $theme-color;
+                    padding: 1rem 2.5rem;
+                    margin: 4rem 0 0 0;
+                    border: none;
+                    outline: none;
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    color: $btn-color;
+                    cursor: pointer;
                 }
             }
 

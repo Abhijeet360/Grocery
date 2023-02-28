@@ -2,6 +2,7 @@
 @import 'var';
 @import 'header';
 @import 'main';
+@import'aside';
 
 * {
     margin: 0;
@@ -14,19 +15,10 @@ html {
     font-family: $my_font;
 }
 
-
 a {
     text-decoration: none;
 }
 
 li {
     list-style: none;
-}
-
-.header {
-    @include header_content();
-}
-
-main {
-    @include main_content();
 }
