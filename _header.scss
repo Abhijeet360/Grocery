@@ -1,24 +1,20 @@
 header {
-    .top-main-container {
-        background-color: $bgc;
-        // display: none;
 
-        @media (max-width: 998px) {
+    .top-nav {
+        background-color: $bgc;
+
+        @media(max-width:62em) {
             display: none;
         }
 
-        .top-nav {
-            width: 85%;
-            margin: auto;
+        .top-nav-container {
             height: 4.5rem;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // border: 2px solid black;
+            padding: 0 10rem;
 
             .container-1 {
-
 
                 ul {
                     display: flex;
@@ -85,30 +81,27 @@ header {
                 }
             }
         }
-
     }
 
     .bottom-nav {
-        width: 85%;
-        margin: auto;
-        padding: 1.5rem 0;
+        padding: 0 10rem;
+
+        @media(max-width:62em) {
+            display: block;
+            padding: 2rem 4rem;
+        }
 
         .items {
             height: 5.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // border: 2px solid black;
 
             .logo {
                 font-size: 1.8rem;
             }
 
             nav {
-                @media (max-width: 998px) {
-                    display: none;
-                }
-
                 width: 50%;
                 // border: 2px solid black;
 
@@ -132,16 +125,17 @@ header {
                     }
 
                 }
+
+                @media(max-width:62em) {
+                    display: none;
+                }
+
             }
 
             .icons {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
-                @media (max-width: 998px) {
-                    display: none;
-                }
 
                 ul {
                     display: flex;
@@ -150,7 +144,7 @@ header {
                         a {
                             font-size: 2rem;
                             color: $a_tag_color;
-                            margin: 0 1rem;
+                            padding: 0 1rem 0 0;
 
                             span {
                                 font-size: 1.5rem;
@@ -159,6 +153,9 @@ header {
                     }
                 }
 
+                @media(max-width:62em) {
+                    display: none;
+                }
             }
 
             .humberger {
@@ -166,12 +163,12 @@ header {
                 border: 2px solid $a_tag_color;
                 padding: 0.5rem;
 
-                @media (max-width: 998px) {
-                    display: block;
-                }
-
                 i {
                     font-size: 2rem;
+                }
+
+                @media(max-width:62em) {
+                    display: block;
                 }
             }
         }

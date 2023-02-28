@@ -1,12 +1,22 @@
 main {
-    width: 85%;
-    margin: auto;
+    width: 100vw;
+    padding: 0 10rem;
     display: flex;
+
+    // border: 1px solid black;
+    @media(max-width:62em) {
+        display: block;
+        padding: 0 4rem;
+    }
 
     .hero-section {
         padding: 0 0 0 3rem;
 
-        .sreach_main_div {
+        @media(max-width:62em) {
+            padding: 0 0 0 0;
+        }
+
+        .sreach-main-div {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -32,7 +42,6 @@ main {
                         align-self: center;
                         font-weight: 700;
                         font-size: 1.6rem;
-                        // text-transform: uppercase;
                         color: $a_tag_color;
                         padding: 0 3rem;
 
@@ -41,12 +50,10 @@ main {
                         }
                     }
 
-                    // padding: 1.1rem 1.8rem;
                     input {
                         flex: 1;
                         border: none;
                         outline: none;
-                        // font-size: 1.8rem;
                     }
 
                     button {
@@ -67,7 +74,11 @@ main {
                 display: flex;
                 align-items: center;
 
-                .phone_icon {
+                @media(max-width:62em) {
+                    display: none;
+                }
+
+                .phone-icon {
                     width: 5rem;
                     height: 5rem;
                     @include center_a_div;
@@ -98,16 +109,27 @@ main {
             justify-content: space-around;
             background-color: #f5f5f5;
 
+            @media(max-width:62em) {
+                background-image: url('assets/hero-img.png');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                padding: 4rem;
+            }
+
             .desceiption {
-                width: 50%;
+                // width: 50%;
                 padding: 4rem 5rem;
+
+                @media(max-width:62em) {
+                    padding: 0 0;
+                }
 
                 h2 {
                     font-size: 1.4rem;
                     color: $theme-color;
                     text-transform: uppercase;
                     letter-spacing: 0.4rem;
-                    // font-family: $my_font;
                 }
 
                 h3 {
@@ -118,8 +140,6 @@ main {
                 p {
                     font-size: 1.4rem;
                     color: $a_tag_color;
-                    // text-transform: uppercase;
-                    // letter-spacing: 0.4rem;
                 }
 
                 button {
@@ -138,6 +158,11 @@ main {
 
             .hero-img {
                 width: 50%;
+
+                @media(max-width:62em) {
+                    width: 80%;
+                    display: none;
+                }
 
                 img {
                     width: 100%;

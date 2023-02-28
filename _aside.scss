@@ -1,9 +1,13 @@
     aside {
-        width: 35%;
+        width: 40%;
         // height: auto;
         border: 2px solid $bgc;
 
-        .iner {
+        @media(max-width:62em) {
+            width: 100%;
+        }
+
+        .inner {
             display: flex;
             align-items: center;
             justify-content: space-between;
